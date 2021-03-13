@@ -1,5 +1,6 @@
 import React from "react";
 import "./product.css";
+import lean from "./images/lean-startup.jpg";
 
 function Product() {
   return (
@@ -12,11 +13,10 @@ function Product() {
         </p>
         <div className="product__rating">
           <p>⭐</p>
-          <p>⭐</p>
-          <p>⭐</p>
         </div>
       </div>
-      <img src="https://image-na.ssl-images-amazon.com/images/I/51Zymb0q7UnL._AC_SY400.jpg" alt="" srcset=""/>
+      <img src={lean} alt="" srcset="" />
+      <button>Add to Basket</button>
     </div>
   );
 }
