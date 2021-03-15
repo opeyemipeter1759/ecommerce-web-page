@@ -18,7 +18,7 @@ function Home() {
         <div className="home__row">
           <Product
             id="001"
-            title="The Lean Startup"
+            title="The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses [By ER]-[Paperback] "
             price={29.99}
             image={lean}
             rating={5}

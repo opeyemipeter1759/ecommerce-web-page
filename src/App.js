@@ -1,16 +1,20 @@
 import "./App.css";
 import Header from "./compos/Header";
 import Home from "./compos/Home";
-
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="app">
-      {/* header */}
-      <Header />
-      {/* body */}
-      <Home/>
-    </div>
+    <BrowserRouter>
+      <div className="app">
+        <Switch>
+          <Header />
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 
