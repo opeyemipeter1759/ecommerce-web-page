@@ -19,7 +19,7 @@ function Product({ id, title, image, rating, price }) {
         </div>
       </div>
       <img src={image} alt="" srcset="" />
-      <button>Add to Basket</button>
+      <button>Add to Cart</button>
     </div>
   );
 }
