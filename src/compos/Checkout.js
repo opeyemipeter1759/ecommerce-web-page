@@ -8,10 +8,12 @@ function Checkout() {
       <div className="checkout__left">
         <img src={checkout_ad} alt="" className="checkout__ad" />
         <div className="">
-          <h2 className="checkout__title">
-            
-          </h2>
+          <h2 className="checkout__title">Shopping Cart</h2>
+          
         </div>
+      </div>
+      <div className="checkout__right">
+        <h2>the subtotal</h2>
       </div>
     </div>
   );
