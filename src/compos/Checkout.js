@@ -4,7 +4,6 @@ import "./Checkout.css";
 import CheckOutProduct from "./CheckOutProduct";
 import checkout_ad from "./images/cheackout_ad.jpg";
 import Subtotal from "./Subtotal";
-import lean from "./images/lean-startup.jpg";
 
 function Checkout() {
   const [{ basket }] = useStateValue();
@@ -16,11 +15,11 @@ function Checkout() {
           <h2 className="checkout__title">Shopping Cart</h2>
           {basket.map((item) => (
             <CheckOutProduct
-              id="1234"
-              title="testing testingtestingtestingtestingtestingtestingtestingtestingtestingtestingtestingtestingtestingtesting"
-              image={lean}
-              price={7777}
-              rating={6}
+              id={item.id}
+              title={item.title}
+              image={item.image}
+              price={item.price}
+              rating={item.rating}
             />
           ))}
         </div>
