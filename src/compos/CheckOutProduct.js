@@ -1,17 +1,17 @@
 import React from "react";
-// import lean from "./images/lean-startup.jpg";
+import './CheckOutProduct.css'
 
 function CheckOutProduct({ id, image, title, price, rating }) {
   return (
-    <div className="checkoutproduct">
-      <img className="checkoutproduct__image" src={image} alt="" />
-      <div className="checkoutproduct__info">
-        <p className="checkoutproduct__title">{title}</p>
-        <p className="checkoutproduct__price">
+    <div className="checkoutProduct">
+      <img className="checkoutProduct__image" src={image} alt="" />
+      <div className="checkoutProduct__info">
+        <p className="checkoutProduct__title">{title}</p>
+        <p className="checkoutProduct__price">
           <small>$</small>
           <strong>{price}</strong>
         </p>
-        <div className="checkoutproduct__rating">
+        <div className="checkoutProduct__rating">
           {Array(rating)
             .fill()
             .map((_, i) => (
