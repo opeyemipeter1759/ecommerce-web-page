@@ -3,6 +3,7 @@ import Header from "./compos/Header";
 import Home from "./compos/Home";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Checkout from "./compos/Checkout";
+import Login from "./compos/Login";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <div className="app">
         <Switch>
           <Route path="/login">
-            
+            <Login />
           </Route>
           <Route path="/checkout">
             <Header />
