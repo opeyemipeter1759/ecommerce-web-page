@@ -8,23 +8,21 @@ import Login from "./compos/Login";
 import { auth } from "./firebase";
 import { useStateValue } from "./ServiceProvider";
 
-function App()
-{
-  const =[{ }, dispatch] = useStateValue();
+function App() {
+  const [{}, dispatch] = useStateValue();
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
-      console.log( "The user is >>> ", authUser );
+      console.log("The user is >>> ", authUser);
       if (authUser) {
-        dispatch( {
-          type: 'SET_USER',
+        dispatch({
+          type: "SET_USER",
           user: authUser,
-        })
-      } else
-      {
-        dispatch( {
-          type: 'SET_USER',
+        });
+      } else {
+        dispatch({
+          type: "SET_USER",
           user: null,
-        })
+        });
       }
     });
   }, []);
